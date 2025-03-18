@@ -99,10 +99,10 @@ $totalRuns = $stmt->fetch(PDO::FETCH_ASSOC)["totalRuns"];
     <!-- Facebook News & Updates -->
     <div class="container my-5">
         <h2 class="text-center mb-4">Latest News & Updates</h2>
-        <div class="d-flex justify-content-center">
-        <iframe   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61574324578183&tabs=timeline&width=340&height=209&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2270690706489643" 
-            width="340" height="209" style="border:none;overflow:hidden" scrolling="no" 
-            frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div class="justify-content-center">
+            <!-- Elfsight Facebook Feed | Untitled Facebook Feed -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-07ee6f32-fc0b-4acf-b82c-39cc3f3e2a8b" data-elfsight-app-lazy></div>
         </div>
     </div>
 
