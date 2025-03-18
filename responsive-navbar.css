@@ -1,0 +1,80 @@
+/* Navbar Custom Styles */
+.navbar {
+    padding: 1rem;
+}
+
+/* Notifications & Profile Dropdowns */
+.dropdown-menu {
+    background-color: #1f1f1f;
+    border: none;
+}
+
+.dropdown-item {
+    color: #f4f4f4;
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: #66ccff;
+}
+
+/* Notification Badge */
+.navbar .badge {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+/* Adjust Dropdowns for Small Screens */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-item {
+        display: block;
+        padding: 12px;
+    }
+
+    .dropdown-toggle::after {
+        display: none; /* Hide dropdown arrow */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+
+    .profile-dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-dropdown h6 {
+        margin-bottom: 5px;
+    }
+}

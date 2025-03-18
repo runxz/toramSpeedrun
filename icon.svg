@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Gradient for the shield -->
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sword element (drawn first so it's behind the shield) -->
+  <line x1="25" y1="75" x2="75" y2="25" stroke="#ecf0f1" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <!-- Simple crossguard -->
+  <rect x="22" y="72" width="6" height="6" fill="#ecf0f1" opacity="0.8" transform="rotate(-45 25 75)"/>
+
+  <!-- Shield shape with an ornate outline -->
+  <path d="M50,12 L78,30 Q88,50 78,70 L50,88 L22,70 Q12,50 22,30 Z" 
+        fill="url(#shieldGradient)" stroke="#bdc3c7" stroke-width="2"/>
+
+  <!-- Lightning bolt (symbolizing speed) centered on the shield -->
+  <polygon points="50,32 56,50 47,50 60,68 42,52 52,52" fill="#e74c3c"/>
+
+  <!-- Optional: Domain text -->
+  <text x="50" y="96" font-family="Georgia" font-size="8" fill="#ecf0f1" text-anchor="middle">
+    toramspeedrun.club
+  </text>
+</svg>
