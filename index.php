@@ -23,6 +23,10 @@ $totalRuns = $stmt->fetch(PDO::FETCH_ASSOC)["totalRuns"];
     <title>Toram Online Speedrun Hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../responsive-navbar.css">
+ 
     <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -91,6 +95,7 @@ $totalRuns = $stmt->fetch(PDO::FETCH_ASSOC)["totalRuns"];
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Login</button>
                     </form>
+                    <p class="mt-3 text-center">Don't have an account? <a href="../register" class="text-warning">Register here</a></p>
                 </div>
             </div>
         </div>
