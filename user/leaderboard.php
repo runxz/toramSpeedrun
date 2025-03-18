@@ -77,7 +77,7 @@ function time_elapsed($datetime) {
             <h2 class="mb-4">Leaderboard for <?php echo htmlspecialchars($boss["name"]); ?></h2>
             
             <!-- Boss Image -->
-            <img src="<?php echo $boss['image'] ? htmlspecialchars($boss['image']) : 'default-boss.png'; ?>" 
+            <img src="../uploads/<?php echo $boss['image'] ? htmlspecialchars($boss['image']) : 'default-boss.png'; ?>" 
                  class="img-fluid rounded shadow-lg" style="max-height: 250px;" alt="Boss Image">
 
             <!-- Submit Run Button -->

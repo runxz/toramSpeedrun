@@ -46,19 +46,26 @@ $latestBosses = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="row g-3">
                 <?php foreach ($latestBosses as $boss): ?>
                     <div class="col-md-4">
-                        <div class="card bg-secondary text-light">
-                            <?php if ($boss['image']): ?>
-                                <img src="<?php echo htmlspecialchars($boss['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($boss['name']); ?>">
-                            <?php else: ?>
-                                <div class="bg-dark text-center p-4">No Image</div>
-                            <?php endif; ?>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo htmlspecialchars($boss['name']); ?></h5>
-                                <p class="card-text">Difficulty: <strong><?php echo htmlspecialchars($boss['difficulty']); ?></strong></p>
-                                <a href="leaderboard.php?bossID=<?php echo $boss['bossID']; ?>" class="btn btn-primary w-100"><i class="fas fa-trophy"></i> View Leaderboard</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="card bg-secondary text-light text-center"> <!-- Added text-center for centering text -->
+        <?php if ($boss['image']): ?>
+            <div class="d-flex justify-content-center mt-3"> <!-- Centering the image -->
+                <img src="../uploads/<?php echo htmlspecialchars($boss['image']); ?>" 
+                     class="card-img-top" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+            </div>
+        <?php else: ?>
+            <div class="bg-dark text-center p-4">No Image</div>
+        <?php endif; ?>
+        
+        <div class="card-body">
+            <h5 class="card-title"><?php echo htmlspecialchars($boss['name']); ?></h5>
+            <p class="card-text">Difficulty: <strong><?php echo htmlspecialchars($boss['difficulty']); ?></strong></p>
+            <a href="leaderboard.php?bossID=<?php echo $boss['bossID']; ?>" class="btn btn-primary w-100">
+                <i class="fas fa-trophy"></i> View Leaderboard
+            </a>
+        </div>
+    </div>
+</div>
+
                 <?php endforeach; ?>
             </div>
         </div>
